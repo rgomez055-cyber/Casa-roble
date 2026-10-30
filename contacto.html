@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Contacto — Casa Roble</title>
+
+    <meta
+      name="description"
+      content="Escríbele al equipo de Casa Roble."
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Contacto — Casa Roble" />
+    <meta
+      property="og:description"
+      content="Formulario de contacto de Casa Roble."
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Contacto — Casa Roble" />
+    <meta
+      name="twitter:description"
+      content="Formulario de contacto de Casa Roble."
+    />
+  </head>
+
+  <body>
+
+    <!-- ENCABEZADO -->
+    <header
+      class="sticky top-0 z-40 border-b border-border bg-background/95 backdrop-blur"
+    >
+      <div class="container-site flex h-16 items-center justify-between">
+
+        <!-- LOGO -->
+        <a
+          class="flex items-center gap-3"
+          aria-label="Casa Roble, ir al inicio"
+          href="index.html"
+        >
+          <span
+            class="flex h-10 w-10 items-center justify-center rounded-full border-2 border-primary font-display text-sm font-bold tracking-wider text-primary"
+          >
+            CR
+          </span>
+
+          <span class="font-display text-xl tracking-wide text-primary">
+            Casa Roble
+          </span>
+        </a>
+
+        <!-- MENÚ -->
+        <nav aria-label="Principal" class="hidden md:block">
+          <ul class="flex gap-8">
+
+            <li>
+              <a
+                class="text-sm text-foreground/80 hover:text-primary"
+                href="index.html"
+              >
+                Inicio
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="text-sm text-foreground/80 hover:text-primary"
+                href="nosotros.html"
+              >
+                Nosotros
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="text-sm text-foreground/80 hover:text-primary"
+                href="catalogo.html"
+              >
+                Catálogo
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="text-sm text-foreground/80 hover:text-primary"
+                href="estilo.html"
+              >
+                Estilo
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="text-sm text-primary font-bold underline underline-offset-8"
+                href="contacto.html"
+                aria-current="page"
+              >
+                Contacto
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+
+        <!-- BOLSA -->
+        <div class="flex items-center gap-2">
+          <a
+            class="relative rounded-full p-2 text-primary hover:bg-muted"
+            aria-label="Bolsa"
+            href="bolsa.html"
+          >
+            🛍
+          </a>
+        </div>
+
+      </div>
+    </header>
+
+
+    <!-- CONTENIDO -->
+    <main id="contenido">
+
+      <div class="container-site grid gap-12 py-16 md:grid-cols-2">
+
+        <!-- TEXTO -->
+        <div>
+
+          <p class="eyebrow">
+            Contacto
+          </p>
+
+          <h1 class="mt-4 text-4xl text-primary md:text-5xl">
+            Escríbenos
+          </h1>
+
+          <p class="mt-6 text-lg text-muted-foreground">
+            ¿Tienes dudas o comentarios sobre el proyecto?
+            Déjanos un mensaje.
+          </p>
+
+          <p
+            class="mt-6 rounded-md bg-muted p-4 text-sm text-muted-foreground"
+          >
+            Completa el formulario y nos pondremos en contacto contigo.
+          </p>
+
+        </div>
+
+
+        <!-- FORMULARIO CONECTADO A FORMSPREE -->
+
+        <form
+          action="https://formspree.io/f/xppplkgb"
+          method="POST"
+          class="space-y-5 rounded-lg bg-card p-6 shadow-soft"
+          id="contact-form"
+        >
+
+          <!-- NOMBRE -->
+          <div>
+
+            <label
+              for="nombre"
+              class="mb-1 block text-sm font-bold"
+            >
+              Nombre
+            </label>
+
+            <input
+              id="nombre"
+              type="text"
+              name="nombre"
+              class="field"
+              autocomplete="name"
+              required
+            />
+
+          </div>
+
+
+          <!-- CORREO -->
+          <div>
+
+            <label
+              for="correo"
+              class="mb-1 block text-sm font-bold"
+            >
+              Correo electrónico
+            </label>
+
+            <input
+              id="correo"
+              type="email"
+              name="correo"
+              class="field"
+              autocomplete="email"
+              required
+            />
+
+          </div>
+
+
+          <!-- MENSAJE -->
+          <div>
+
+            <label
+              for="mensaje"
+              class="mb-1 block text-sm font-bold"
+            >
+              Mensaje
+            </label>
+
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="5"
+              class="field"
+              required
+            ></textarea>
+
+          </div>
+
+
+          <!-- BOTÓN FORMSPREE -->
+          <button
+            type="submit"
+            class="btn-primary w-full"
+          >
+            Enviar mensaje
+          </button>
+
+
+          <!-- WHATSAPP -->
+          <a
+            href="https://wa.me/525569601861"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-success"
+          >
+            Contactar por WhatsApp
+          </a>
+
+        </form>
+
+      </div>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="mt-24 bg-primary text-primary-foreground">
+
+      <div
+        class="container-site flex flex-col gap-6 py-12 md:flex-row md:items-center md:justify-between"
+      >
+
+        <div>
+
+          <p class="font-display text-2xl">
+            Casa Roble
+          </p>
+
+          <p class="mt-1 text-sm opacity-80">
+            Proyecto universitario. Productos y precios de demostración.
+          </p>
+
+        </div>
+
+
+        <ul class="flex flex-wrap gap-6 text-sm">
+
+          <li>
+            <a
+              class="opacity-80 hover:opacity-100"
+              href="index.html"
+            >
+              Inicio
+            </a>
+          </li>
+
+          <li>
+            <a
+              class="opacity-80 hover:opacity-100"
+              href="nosotros.html"
+            >
+              Nosotros
+            </a>
+          </li>
+
+          <li>
+            <a
+              class="opacity-80 hover:opacity-100"
+              href="catalogo.html"
+            >
+              Catálogo
+            </a>
+          </li>
+
+          <li>
+            <a
+              class="opacity-80 hover:opacity-100"
+              href="estilo.html"
+            >
+              Estilo
+            </a>
+          </li>
+
+          <li>
+            <a
+              class="opacity-80 hover:opacity-100"
+              href="contacto.html"
+            >
+              Contacto
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </footer>
+
+    <!--
+      IMPORTANTE:
+      app.js está desactivado temporalmente en contacto.html
+      para que no intercepte el envío de Formspree.
+    -->
+
+    <!-- <script src="app.js" defer></script> -->
+
+  </body>
+</html>
